@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Mxova Lass</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <div class="nav-logo">
+            <a href="index.html">Mxova Lass</a>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="music.html" class="nav-link">Music</a>
+            <a href="photos.html" class="nav-link active">Photos</a> <!-- Add this line -->
+            <a href="bookings.html" class="nav-link">Bookings</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <div class="music-info">
+            <span>Now Playing: City of Gods</span>
+        </div>
+        <div class="music-controls">
+            <button class="music-btn" id="playBtn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="music-btn" id="pauseBtn">
+                <i class="fas fa-pause"></i>
+            </button>
+        </div>
+        <audio id="bgMusic" loop>
+            <source src="City__of_Gods.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- About Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>About Mxova Lass</h1>
+            <p>The story behind the music</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-detail">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-image-large">
+                    <img src="img/jorney.jpg" alt="Mxova Lass Portrait">
+                </div>
+                <div class="about-text-detail">
+                    <h2>My Musical Journey</h2>
+                    <p>Mxova Lass is a 19-year-old Hip Hop and Amapiano artist from Pretoria, South Africa. Born in January 2006, he represents the voice of a new generation of South African musicians blending traditional sounds with contemporary urban music.</p>
+                    
+                    <p>Growing up in the vibrant streets of Pretoria, Mxova was exposed to diverse musical influences from an early age. The rhythmic beats of Amapiano and the raw storytelling of Hip Hop shaped his unique sound that captures the essence of South African youth culture.</p>
+                    
+                    <h3>Musical Style</h3>
+                    <p>My music is a fusion of gritty Hip Hop flows and infectious Amapiano beats. I draw inspiration from my surroundings, telling authentic stories from the streets while creating danceable tracks that get people moving.</p>
+                    
+                    <h3>Achievements & Recognition</h3>
+                    <ul class="achievements">
+                        <li>Featured Artist - SA Hip Hop Awards (2023)</li>
+                        <li>Top 10 - Metro FM Music Awards (2024)</li>
+                        <li>Breakthrough Artist - Pretoria Menlyn Perfomance (2024)</li>
+                        <li>Collaborations with some SA Upcoming Artists (2022-2025)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Musical Influences -->
+    <section class="influences">
+        <div class="container">
+            <h2 class="section-title">Musical Influences</h2>
+            <div class="influences-grid">
+                <div class="influence-card">
+                    <div class="influence-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Amapiano Roots</h3>
+                    <p>Drawing from the rich Amapiano tradition of South Africa, log drums and melodies with contemporary production.</p>
+                </div>
+                <div class="influence-card">
+                    <div class="influence-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Hip Hop Storytelling</h3>
+                    <p>Inspired by the lyrical depth of Hip Hop, telling authentic stories from the streets of Pretoria and beyond.</p>
+                </div>
+                <div class="influence-card">
+                    <div class="influence-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <h3>African Sounds</h3>
+                    <p>Incorporating diverse African musical elements to create a sound that represents the continent's vibrant musical heritage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mxova Lass</h3>
+                    <p>Hip Hop & Amapiano Artist from Pretoria, South Africa. The voice of a new generation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mxova Lass. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

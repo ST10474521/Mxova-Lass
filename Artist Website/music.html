@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music | Mxova Lass</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container nav-container">
+        <div class="nav-logo">
+            <a href="index.html">Mxova Lass</a>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="music.html" class="nav-link">Music</a>
+            <a href="photos.html" class="nav-link active">Photos</a> <!-- Add this line -->
+            <a href="bookings.html" class="nav-link">Bookings</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <div class="music-info">
+            <span>Now Playing: City of Gods</span>
+        </div>
+        <div class="music-controls">
+            <button class="music-btn" id="playBtn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="music-btn" id="pauseBtn">
+                <i class="fas fa-pause"></i>
+            </button>
+        </div>
+        <audio id="bgMusic" loop>
+            <source src="City__of_Gods.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Music Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 style="color: gold;">My Music</h1>
+            <p>Stream and download my latest tracks</p>
+            <p style="color: gold;">Feature Coming Soon</p>
+        </div>
+    </section>
+
+    <!-- Music Filters -->
+    <section class="music-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Releases</button>
+                <button class="filter-btn" data-filter="single">Singles</button>
+                <button class="filter-btn" data-filter="ep">EPs</button>
+                <button class="filter-btn" data-filter="mixtape">Mixtapes</button>
+                <button class="filter-btn" data-filter="collab">Collaborations</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Grid -->
+    <section class="music-grid-section">
+        <div class="container">
+            <div class="music-grid">
+                <div class="music-item single">
+                    <div class="music-cover">
+                        <img src="img/poster_2024-12-25-060713.png" alt="City of Gods">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-details">
+                        <h3>City of Gods</h3>
+                        <p>Single • 2023</p>
+                        <div class="stream-links">
+                            <a href="#"><i class="fab fa-spotify"></i></a>
+                            <a href="#"><i class="fab fa-apple"></i></a>
+                            <a href="#"><i class="fab fa-soundcloud"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-item ep">
+                    <div class="music-cover">
+                        <img src="img/pray.png" alt="Pray ft Lil Habitt">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-details">
+                        <h3>Pray ft Lil Habitt</h3>
+                        <p>Single • 2024</p>
+                        <div class="stream-links">
+                            <a href="#"><i class="fab fa-spotify"></i></a>
+                            <a href="#"><i class="fab fa-apple"></i></a>
+                            <a href="#"><i class="fab fa-soundcloud"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-item mixtape">
+                    <div class="music-cover">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Pretoria Nights">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-details">
+                        <h3>Pretoria Nights</h3>
+                        <p>Collaboration • 2022</p>
+                        <div class="stream-links">
+                            <a href="#"><i class="fab fa-spotify"></i></a>
+                            <a href="#"><i class="fab fa-apple"></i></a>
+                            <a href="#"><i class="fab fa-soundcloud"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-item single">
+                    <div class="music-cover">
+                        <img src="img/NO GAME.png" alt="NO GAME ft The Brothers of Destiny">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-details">
+                        <h3>No Game ft The Brothers of DestinY</h3>
+                        <p>Single • 2023</p>
+                        <div class="stream-links">
+                            <a href="#"><i class="fab fa-spotify"></i></a>
+                            <a href="#"><i class="fab fa-apple"></i></a>
+                            <a href="#"><i class="fab fa-soundcloud"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-item collab">
+                    <div class="music-cover">
+                        <img src="https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="SA Connection">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-details">
+                        <h3>SA Connection</h3>
+                        <p>Collaboration • 2022</p>
+                        <div class="stream-links">
+                            <a href="#"><i class="fab fa-spotify"></i></a>
+                            <a href="#"><i class="fab fa-apple"></i></a>
+                            <a href="#"><i class="fab fa-soundcloud"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-item ep">
+                    <div class="music-cover">
+                        <img src="img/baby.jpg" alt="Baby Come Home">
+                        <div class="play-overlay">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="music-details">
+                        <h3>Baby Come Home ft Scotts Ivy</h3>
+                        <p>Single • 2023</p>
+                        <div class="stream-links">
+                            <a href="#"><i class="fab fa-spotify"></i></a>
+                            <a href="#"><i class="fab fa-apple"></i></a>
+                            <a href="#"><i class="fab fa-soundcloud"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Video -->
+    <section class="music-video">
+        <div class="container">
+            <h2 class="section-title">Latest Music Video</h2>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <p>COMING SOON</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mxova Lass</h3>
+                    <p>Hip Hop & Amapiano Artist from Pretoria, South Africa. The voice of a new generation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mxova Lass. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

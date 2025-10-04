@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings | Mxova Lass</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <div class="nav-logo">
+            <a href="index.html">Mxova Lass</a>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="music.html" class="nav-link">Music</a>
+            <a href="photos.html" class="nav-link active">Photos</a> <!-- Add this line -->
+            <a href="bookings.html" class="nav-link">Bookings</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+    <!-- Music Player -->
+    <div class="music-player">
+        <div class="music-info">
+            <span>Now Playing: City of Gods</span>
+        </div>
+        <div class="music-controls">
+            <button class="music-btn" id="playBtn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="music-btn" id="pauseBtn">
+                <i class="fas fa-pause"></i>
+            </button>
+        </div>
+        <audio id="bgMusic" loop>
+            <source src="City__of_Gods.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Bookings Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Bookings & Events</h1>
+            <p>Let's create an unforgettable experience together</p>
+        </div>
+    </section>
+
+    <!-- Booking Options -->
+    <section class="booking-options">
+        <div class="container">
+            <h2 class="section-title">Performance Options</h2>
+            <div class="options-grid">
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <h3>Live Performances</h3>
+                    <p>Full live performances with a band or DJ backup for concerts, festivals, and events.</p>
+                    <ul>
+                        <li>Up to 90-minute set</li>
+                        <li>Full band or DJ options</li>
+                        <li>Soundcheck included</li>
+                        <li>Custom setlist available</li>
+                    </ul>
+                </div>
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Club Appearances</h3>
+                    <p>High-energy performances tailored for nightclubs and lounge venues.</p>
+                    <ul>
+                        <li>30-60 minute sets</li>
+                        <li>DJ integration</li>
+                        <li>Custom mixes available</li>
+                        <li>Late night options</li>
+                    </ul>
+                </div>
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Private Events</h3>
+                    <p>Exclusive performances for private parties, corporate events, and special occasions.</p>
+                    <ul>
+                        <li>Tailored performance</li>
+                        <li>Flexible duration</li>
+                        <li>Acoustic options</li>
+                        <li>Meet & greet included</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Performance Packages</h2>
+            <div class="pricing-table">
+                <div class="pricing-tier">
+                    <h3>Standard</h3>
+                    <div class="price">R5,000 - R15,000</div>
+                    <p>Perfect for small venues and events</p>
+                    <ul>
+                        <li>Up to 45-minute performance</li>
+                        <li>Basic sound setup</li>
+                        <li>1-2 crew members</li>
+                        <li>Local events only</li>
+                    </ul>
+                </div>
+                <div class="pricing-tier featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Premium</h3>
+                    <div class="price">R15,000 - R30,000</div>
+                    <p>Ideal for medium-sized events</p>
+                    <ul>
+                        <li>Up to 90-minute performance</li>
+                        <li>Full sound and lighting</li>
+                        <li>3-5 crew members</li>
+                        <li>Regional travel included</li>
+                    </ul>
+                </div>
+                <div class="pricing-tier">
+                    <h3>Executive</h3>
+                    <div class="price">R30,000+</div>
+                    <p>For major events and festivals</p>
+                    <ul>
+                        <li>Custom performance length</li>
+                        <li>Premium production</li>
+                        <li>Full crew included</li>
+                        <li>Nationwide travel</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="pricing-note">* All prices are starting points. Final cost depends on event type, location, and requirements.</p>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Book Your Event</h2>
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-type">Event Type</label>
+                        <select id="event-type" name="event-type" required>
+                            <option value="">Select event type</option>
+                            <option value="concert">Concert</option>
+                            <option value="festival">Festival</option>
+                            <option value="club">Club/Lounge</option>
+                            <option value="private">Private Event</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Event Date</label>
+                        <input type="date" id="event-date" name="event-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget" required>
+                            <option value="">Select budget range</option>
+                            <option value="5000-15000">R5,000 - R15,000</option>
+                            <option value="15000-30000">R15,000 - R30,000</option>
+                            <option value="30000+">R30,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="description">Event Details</label>
+                        <textarea id="description" name="description" rows="5" placeholder="Tell me about your event, venue, audience size, and any special requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Submit Booking Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How far in advance should I book?</h3>
+                    <p>For best availability, we recommend booking at least 4-6 weeks in advance. For major events or festivals, 3-6 months in advance is ideal.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you travel outside of Pretoria?</h3>
+                    <p>Yes, I perform nationwide across South Africa. Travel expenses are included in the pricing for regional and nationwide packages.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is your payment process?</h3>
+                    <p>A 50% deposit is required to secure the booking, with the remaining 50% due 7 days before the event. Payments can be made via bank transfer or other agreed methods.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can you perform cover songs?</h3>
+                    <p>Yes, I can include cover songs in the performance. Let me know your preferences during the booking process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mxova Lass</h3>
+                    <p>Hip Hop & Amapiano Artist from Pretoria, South Africa. The voice of a new generation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mxova Lass. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

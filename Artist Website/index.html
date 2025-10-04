@@ -1,0 +1,231 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mxova Lass | Hip Hop & Amapiano Artist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Mxova Lass</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="music.html" class="nav-link">Music</a>
+                <a href="photos.html" class="nav-link">Photos</a>
+                <a href="bookings.html" class="nav-link">Bookings</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <div class="music-info">
+            <span>Now Playing: City of Gods</span>
+        </div>
+        <div class="music-controls">
+            <button class="music-btn" id="playBtn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="music-btn" id="pauseBtn">
+                <i class="fas fa-pause"></i>
+            </button>
+        </div>
+        <audio id="bgMusic" loop>
+            <source src="City__of_Gods.mp3" type="audio">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title disco-gradient">Mxova Lass</h1>
+            <p class="hero-subtitle">Hip Hop & Amapiano Artist</p>
+            <p class="hero-location">From the Streets of Pretoria, South Africa</p>
+            <div class="hero-buttons">
+                <a href="music.html" class="btn btn-primary">Listen Now</a>
+                <a href="bookings.html" class="btn btn-secondary">Book a Show</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- Latest Release -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Latest Release</h2>
+            <div class="featured-grid">
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="img/poster_2024-12-25-060713.png" alt="City of Gods Single Cover">
+                    </div>
+                    <div class="music-info">
+                        <h3>City of Gods</h3>
+                        <p>Single • 2025</p>
+                        <div class="music-buttons">
+                            <button class="btn-stream">
+                                <i class="fab fa-spotify"></i> Stream
+                            </button>
+                            <button class="btn-download">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="img/pray.png" alt="Pray Single Cover">
+                    </div>
+                    <div class="music-info">
+                        <h3>Pray ft Lil Habitt</h3>
+                        <p>EP • 2024</p>
+                        <div class="music-buttons">
+                            <button class="btn-stream">
+                                <i class="fab fa-spotify"></i> Stream
+                            </button>
+                            <button class="btn-download">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-card">
+                    <div class="music-image">
+                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Pretoria Nights Album Cover">
+                    </div>
+                    <div class="music-info">
+                        <h3>Pretoria Nights</h3>
+                        <p>Mixtape • 2022</p>
+                        <div class="music-buttons">
+                            <button class="btn-stream">
+                                <i class="fab fa-spotify"></i> Stream
+                            </button>
+                            <button class="btn-download">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>The Voice of a New Generation</h2>
+                    <p>Mxova Lass is a 19-year-old Hip Hop and Amapiano artist from Pretoria, South Africa. Born in January 2006, he's quickly making a name for himself with his unique blend of gritty hip hop flows and infectious amapiano beats.</p>
+                    <p>His music captures the energy of South African youth culture while telling authentic stories from the streets of Pretoria.</p>
+                    <a href="about.html" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="img/testingbg2.jpg" alt="Mxova Lass">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Shows -->
+    <section class="shows">
+        <div class="container">
+            <h2 class="section-title">Upcoming Shows</h2>
+            <div class="shows-list">
+                <div class="show-item">
+                    <div class="show-date">
+                        <span class="date-day">null</span>
+                        <span class="date-month"></span>
+                    </div>
+                    <div class="show-info">
+                        <h3>No Show Available</h3>
+                        <p>---</p>
+                    </div>
+                    <div class="show-action">
+                        <a href="bookings.html" class="btn btn-primary">Get Tickets</a>
+                    </div>
+                </div>
+                <div class="show-item">
+                    <div class="show-date">
+                        <span class="date-day">null</span>
+                        <span class="date-month">----</span>
+                    </div>
+                    <div class="show-info">
+                        <h3>No Show Available</h3>
+                        <p>Book</p>
+                    </div>
+                    <div class="show-action">
+                        <a href="bookings.html" class="btn btn-primary">Get Tickets</a>
+                    </div>
+                </div>
+                <div class="show-item">
+                    <div class="show-date">
+                        <span class="date-day">null</span>
+                        <span class="date-month"></span>
+                    </div>
+                    <div class="show-info">
+                        <h3>No Show Available</h3>
+                        <p>Book</p>
+                    </div>
+                    <div class="show-action">
+                        <a href="bookings.html" class="btn btn-primary">Get Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mxova Lass</h3>
+                    <p>Hip Hop & Amapiano Artist from Pretoria, South Africa. The voice of a new generation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mxova Lass. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos | Mxova Lass</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+        <div class="nav-logo">
+            <a href="index.html">Mxova Lass</a>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="music.html" class="nav-link">Music</a>
+            <a href="photos.html" class="nav-link active">Photos</a> <!-- Add this line -->
+            <a href="bookings.html" class="nav-link">Bookings</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+    <!-- Music Player -->
+    <div class="music-player">
+        <div class="music-info">
+            <span>Now Playing: City of Gods</span>
+        </div>
+        <div class="music-controls">
+            <button class="music-btn" id="playBtn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="music-btn" id="pauseBtn">
+                <i class="fas fa-pause"></i>
+            </button>
+        </div>
+        <audio id="bgMusic" loop>
+            <source src="City__of_Gods.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Photos Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <p>Behind the scenes and performance moments</p>
+        </div>
+    </section>
+
+    <!-- Photos Grid -->
+    <section class="photos-gallery">
+        <div class="container">
+            <div class="photos-grid">
+                <div class="photo-item">
+                    <img src="img/OUTSIDE.jpg" alt="Studio Session">
+                    <div class="photo-overlay">
+                        <h3>Outside</h3>
+                        <p>Daily Hangouts</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="img/LIVE.jpg" alt="Live Performance">
+                    <div class="photo-overlay">
+                        <h3>Live Performance</h3>
+                        <p>Pretoria Menlyn Mall</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="img/coverphoto.jpg" alt="Music Video Shoot">
+                    <div class="photo-overlay">
+                        <h3>Music Video Shoot</h3>
+                        <p>City of Gods video set</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="img/relaxed.jpg" alt="Backstage">
+                    <div class="photo-overlay">
+                        <h3>At Home</h3>
+                        <p>2024</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="img/perfomance.jpg" alt="Collaboration">
+                    <div class="photo-overlay">
+                        <h3>Collaboration</h3>
+                        <p>Perfomance</p>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="img/streetstyle.jpg" alt="Street Style">
+                    <div class="photo-overlay">
+                        <h3>Street Style</h3>
+                        <p>Around Pretoria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mxova Lass</h3>
+                    <p>Hip Hop & Amapiano Artist from Pretoria, South Africa. The voice of a new generation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                        <li><a href="bookings.html">Bookings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mxova Lass. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
